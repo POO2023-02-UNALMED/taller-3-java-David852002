@@ -8,7 +8,7 @@ public class TV {
 	private boolean estado;
 	private int volumen;
 	Control control;
-	private static int numTV;
+	private static int numTV = 0;
 	
 	public TV(Marca marca, boolean estado) {
 		
@@ -17,7 +17,7 @@ public class TV {
 		canal = 1;
 		volumen = 1;
 		precio = 500;
-		
+		numTV++;
 	}
 		
 	public void setMarca(Marca marca) {
@@ -83,23 +83,17 @@ public class TV {
 		 return numTV;
 	 }
 
-	 public boolean turnOn(boolean estado) {
-		 
-		 if (estado = false ) {
-			 
+	 public void turnOn() {
+		  
 			 estado = true; 
-			 
-		 }
-		 return estado;
+
 	 }
 
-	 public boolean turnOff(boolean estado) {
+	 public void turnOff() {
 		 
-		 if (estado = true) {
+	
 			 estado = false;
-		 }
-		 
-		 return estado;
+		
 	 }
 	 
 	 public boolean getEstado() {
