@@ -79,7 +79,7 @@ public class TV {
 	 public int getPrecio() {
 		 return precio;
 	 }
-	 public int getnumTV() {
+	 public int getNumTV() {
 		 return numTV;
 	 }
 
