@@ -20,12 +20,12 @@ public class TV {
 		numTV ++;
 	}
 		
-	void setMarca(Marca marca) {
+	public void setMarca(Marca marca) {
 		
 		this.marca = marca;
 		
 		}
-	int setCanal(int canal) {
+	public int setCanal(int canal) {
 		
 		if (canal>=1 && canal <=120 && estado ==true) { 
 			
@@ -35,7 +35,7 @@ public class TV {
 		return canal;
 		
 	}
-	int setVolumen(int volumen) {
+	public int setVolumen(int volumen) {
 		
 		if(volumen>=0 && volumen <=7 && estado==true) {
 			
@@ -44,46 +44,46 @@ public class TV {
 		return volumen;
 		
 	}
-	void setControl(Control control) {
+	public void setControl(Control control) {
 		
 		this.control = control;
 		
 	}
-	void setPrecio(int precio) {
+	public void setPrecio(int precio) {
 		
 		this.precio = precio;
 		
 	}
 	
 	 
-	 Marca getMarca() {
+	 public Marca getMarca() {
 		
 		return  marca;
 		
 	}
-	 int getCanal() {
+	 public int getCanal() {
 		 
 		 return canal;
 	 
 	 }
-	 int getVolumen() {
+	 public int getVolumen() {
 		 
 		 return volumen;
 		 
 	 }
-	 Control getControl() {
+	 public Control getControl() {
 		 
 		 return control;
 		 
 	 }
-	 int getPrecio() {
+	 public int getPrecio() {
 		 return precio;
 	 }
-	 int getnumTV() {
+	 public int getnumTV() {
 		 return numTV;
 	 }
 
-	 void turnOn(boolean estado) {
+	 public void turnOn(boolean estado) {
 		 
 		 if (estado = false ) {
 			 
@@ -93,18 +93,18 @@ public class TV {
 		 
 	 }
 
-	 void turnOff(boolean estado) {
+	 public void turnOff(boolean estado) {
 		 
 		 if (estado = true) {
 			 estado = false;
 		 }
 	 }
 	 
-	 boolean getEstado() {
+	 public boolean getEstado() {
 		 return estado;
 	 }
 	 
-	int canalUp(){
+	 public int canalUp(){
 		if (canal>=1 && canal <=120 && estado ==true) { 
 		
 			canal++;
@@ -113,7 +113,7 @@ public class TV {
 		
 		return canal;
 	}
-	int canalDown(){
+	 public int canalDown(){
 		if (canal>=1 && canal <=120 && estado ==true) { 
 			
 			canal--;
@@ -122,7 +122,7 @@ public class TV {
 		
 		return canal;}
 	
-	int volumenUp() {
+	 public int volumenUp() {
 		
 		if(volumen>=0 && volumen <=7 && estado==true) {
 			
@@ -133,7 +133,7 @@ public class TV {
 		
 	}
 	
-	int volumenDown() {
+	 public int volumenDown() {
 		
 		if(volumen>=0 && volumen <=7 && estado==true) {
 			
