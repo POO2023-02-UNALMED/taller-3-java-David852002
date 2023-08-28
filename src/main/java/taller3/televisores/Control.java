@@ -16,25 +16,27 @@ public class Control {
 	}
 		
 	
-	public int canalUp() {
-		
-		return tv.canalUp();
-	}
-	
-	public int canalDown() {
-		
-		return tv.canalDown();
-	}
-	
-	public int volumenUp() {
-		
-		return tv.volumenUp();
-		
-	}
-	
-	public int volumenDown() {
-		return tv.volumenDown();
-	}
+	public void canalUp() {
+        if (tv != null && tv.getEstado() && tv.getCanal() <= 120) {
+            tv.canalUp();
+        }
+    }
+	 public void canalDown() {
+	        if (tv != null && tv.getEstado() && tv.getCanal() >= 1) {
+	            tv.canalDown();
+	        }
+	    }
+	 public void volumenUp() {
+	        if (tv != null && tv.getEstado() && tv.getVolumen() <= 7) {
+	            tv.volumenUp();
+	        }
+	    }
+	 public void volumenDown() {
+	        if (tv != null && tv.getEstado() && tv.getVolumen() >= 0) {
+	            tv.volumenDown();
+	        }
+	    }
+
 	
 	public void enlazar(TV tv) {
 		this.tv = tv;

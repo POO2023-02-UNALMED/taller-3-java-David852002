@@ -100,45 +100,32 @@ public class TV {
 		 return estado;
 	 }
 	 
-	 public int canalUp(){
-		if (canal>=1 && canal <=120 && estado ==true) { 
+	 public void canalUp() {
+	        if (estado && canal < 120) {
+	            canal++;
+	        }
+	    }
+
 		
-			canal++;
-		
-		}
-		
-		return canal;
-	}
-	 public int canalDown(){
-		if (canal>=1 && canal <=120 && estado ==true) { 
-			
-			canal--;
-		
-		}
-		
-		return canal;}
+
+	 public void canalDown() {
+	        if (estado && canal > 1) {
+	            canal--;
+	        }
+	    }
+	 
+	 public void volumenUp() {
+	        if (estado && volumen < 7) {
+	            volumen++;
+	        }
+	    }
 	
-	 public int volumenUp() {
-		
-		if(volumen>=0 && volumen <=7 && estado==true) {
-			
-			volumen++;
-		}
-		
-		return volumen;
-		
-	}
-	
-	 public int volumenDown() {
-		
-		if(volumen>=0 && volumen <=7 && estado==true) {
-			
-			volumen--;
-		}
-		
-		return volumen;
-		
-	}
+	 public void volumenDown() {
+	        if (estado && volumen > 0) {
+	            volumen--;
+	        }
+	    }
+
 	
 	 public static void setNumTV(int numTV) {
 		 TV.numTV = numTV;
