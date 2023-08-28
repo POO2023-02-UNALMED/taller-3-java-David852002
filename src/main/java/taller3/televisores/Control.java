@@ -41,6 +41,16 @@ public class Control {
 		this.tv.control = tv.control ;
 	}
 	
+	int setCanal(int canal) {
+		
+		return tv.setCanal(canal);
+	}
+	
+	int setVolumen(int volumen) {
+		
+		return tv.setVolumen(volumen);
+	}
+	
 	void setTv(TV tv) {
 		this.tv = tv;
 	
